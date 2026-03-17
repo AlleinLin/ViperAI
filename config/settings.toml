@@ -1,0 +1,49 @@
+[app]
+name = "ViperAI"
+host = "0.0.0.0"
+port = 9090
+
+[database]
+host = "127.0.0.1"
+port = 3306
+user = "root"
+password = "123456"
+database = "viperai"
+charset = "utf8mb4"
+
+[cache]
+host = "127.0.0.1"
+port = 6379
+password = ""
+db = 0
+
+[queue]
+host = "localhost"
+port = 5672
+user = "root"
+password = "123456"
+vhost = "/"
+
+[auth]
+secret = "viperai-secret-key-2024"
+issuer = "viperai"
+subject = "auth"
+duration = 8760
+
+[mail]
+address = "your_email@qq.com"
+auth_code = "your_auth_code"
+smtp_server = "smtp.qq.com"
+smtp_port = 587
+
+[ai_model]
+provider = "openai"
+embedding_model = "text-embedding-v4"
+chat_model = "qwen-turbo"
+base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+dimension = 1024
+doc_directory = "./docs"
+
+[voice]
+api_key = "baidu_api_key"
+secret_key = "baidu_secret_key"
